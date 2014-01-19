@@ -1,0 +1,31 @@
+﻿@using AspNetLab.Helpers
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<p>
+    <h2>Table Storage</h2>
+</p>
+<div>
+    <ul id="tableStorage" class="nav nav-tabs">
+        <li><a href="#divPut" data-toggle="tab">Put</a></li>
+        <li><a href="#divGet" data-toggle="tab">Get</a></li>
+        <li><a href="#divGetPage" data-toggle="tab">Get Page</a></li>
+        <li><a href="#divDelete" data-toggle="tab">Delete</a></li>
+    </ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="divPut"></div>
+
+</div>
+
+</div>
+<script type="text/javascript">
+    (function($) {
+        $('#tableStorage a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+
+</script>
